@@ -1,14 +1,24 @@
 <html>
     <head>
         <title>Email Responses</title> 
+        
+        <script>
 
+            function buttonToText(button){
+                var word = button.innerHTML;
+                var textAreaINeed = document.querySelector("textarea");
+                textAreaINeed.innerHTML= word;
+            }
+
+        </script>
+        
     </head>
     <body>
         <form>
             <table>
                 <tr>
-                    <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)">Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)">Twatwaffle</button></td>
                     <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
                     <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
                 </tr>
@@ -30,9 +40,14 @@
                         <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
                         <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
                 </tr>
-
+                
             </table>
-            
+            <center> 
+                <textarea rows="100" cols="100">
+                    Copy and Paste the incident appropriate responses that pop up here!
+                </textarea>
+            </center>
+
         </form>
     </body>
    
