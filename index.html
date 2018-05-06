@@ -1,49 +1,157 @@
 <html>
     <head>
         <title>Email Responses</title> 
+
+        <center>
+            <img src="https://secure.fileandservexpress.com/FSXNewUI/Content/CSS/Home/Images/HeaderLogo.png" alt="FSX Icon" style="width:280px; height:53px;" />
+            <br />
+            <font face="calibri" color="#157DEC" size="6">Email Responses</font>
+        </center>
         
         <script>
 
             function buttonToText(button){
                 var word = button.innerHTML;
                 var textAreaINeed = document.querySelector("textarea");
-                textAreaINeed.innerHTML= word;
+                textAreaINeed.innerHTML = word;
             }
 
+            function buttonToDelete(button) {
+                var word = button.innerHTML;
+                var textAreaINeed = document.querySelector("textarea")
+                textAreaINeed.innerHTML = '';
+            }
         </script>
-        
+            <style>
+                .button {
+                    background-color: #0072cd;
+                    border-color: #006cc3;
+                    border-radius: 12px;
+                    font-size: 13px;
+                    font: 600 15px/22px 'Sans Serif';
+                    color:white;
+                }
+
+                    .button1 {
+                        background-color: darkred;
+                        border-color:black;
+                        color:white;
+                       
+                    }
+            </style>
     </head>
     <body>
         <form>
             <table>
+                <caption>
+                    <center>
+                        <font face="calibri" color="gray" size="4">Click a button to send it to the text box.
+                    </center>
+                    <br />
+                </caption>
                 <tr>
-                    <td><button type="button" onclick="buttonToText(this)">Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)">Waffle</button></td>
-                    <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  The attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  The attorney has been removed from case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  The party name has been updated on case number XXXX</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  The parties have been dismissed from the case.</button></td>
                 </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
                 <tr>
-                        <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
-                        <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
-                        <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
-                        <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Our Accounting Team has approved your credit of $X.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Our Accounting Team was unable to approve your credit due to the following reasons: insert reason here</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Our Accounting team has approved part of your credit request.  See the amount info and reasoning below: insert info below</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Our Accounting Team is still researching your credit request.  We appreciate your patience.  I will reach out to you as soon as they provide an update!</button></td>
+
                 </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
                 <tr>
-                        <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
-                        <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
-                        <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
-                        <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  </button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
                 </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
                 <tr>
-                        <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
-                        <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
-                        <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
-                        <td><button type="button">Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
                 </tr>
-                
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td>&#8594</td>
+                    <td>&#8594</td>
+
+                    <td><button type="button" onclick="buttonToDelete(this)" class="button button1">Delete Current Response(s)</button></td>
+
+                    <td>&#8592</td>
+                    <td>&#8592</td>
+
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+
             </table>
             <center> 
-                <textarea rows="100" cols="100">
+                <textarea rows="20" cols="70" 
+                 style="font-family:Calibri;color:gray;font-size:20"> 
                     Copy and Paste the incident appropriate responses that pop up here!
                 </textarea>
             </center>
