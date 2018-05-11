@@ -1,162 +1,182 @@
 <html>
-    <head>
-        <title>Email Responses</title> 
+<head>
+    <br>
+    <title>Email Responses</title>
 
-        <center>
-            <img src="https://secure.fileandservexpress.com/FSXNewUI/Content/CSS/Home/Images/HeaderLogo.png" alt="FSX Icon" style="width:280px; height:53px;" />
-            <br />
-            <font face="calibri" color="#157DEC" size="6">Email Responses</font>
-        </center>
+    <center>
+        <img src="https://secure.fileandservexpress.com/FSXNewUI/Content/CSS/Home/Images/HeaderLogo.png" alt="FSX Icon" style="width:280px; height:53px;" />
+        <br />
+        <font face="calibri" color="#157DEC" size="6">Email Responses</font>
+        <br />
+        <br />
+        <br />
+        <br />
+    </center>
+
+    <script>
+
+        function buttonToText(button) {
+            var word = button.innerHTML;
+            var textAreaINeed = document.querySelector("textarea");
+            textAreaINeed.innerHTML += word;
+        }
+
+        function buttonToDelete(button) {
+            var word = button.innerHTML;
+            var textAreaINeed = document.querySelector("textarea")
+            textAreaINeed.innerHTML = '';
+        }
+
+        function Email(button) {
+            var textAreaINeed = document.querySelector("textarea");
+            var bodyOfText = escape( textAreaINeed.innerHTML );
+            var emailWindow = window.open( "mailto:demo@demo.com?subject=Ticket Number XXXX&cc=info@fileandserve.com&body=" + bodyOfText )
+
+        }
+       
+
+    </script>
+    <style>
+        td {
+            padding-bottom: 20px;
+            padding-left: 7px;
+            padding-right: 7px;
+
+        }
         
-        <script>
+        .button {
+            background-color: #0072cd;
+            border-color: #006cc3;
+            border-radius: 12px;
+            font-size: 13px;
+            font: 600 15px/22px 'Sans Serif';
+            color: white;
+ 
+        }
 
-            function buttonToText(button){
-                var word = button.innerHTML;
-                var textAreaINeed = document.querySelector("textarea");
-                textAreaINeed.innerHTML = word;
-            }
+        .button1 {
+            background-color: darkred;
+            border-color: black;
+            color: white;
+        }
 
-            function buttonToDelete(button) {
-                var word = button.innerHTML;
-                var textAreaINeed = document.querySelector("textarea")
-                textAreaINeed.innerHTML = '';
-            }
-        </script>
-            <style>
-                .button {
-                    background-color: #0072cd;
-                    border-color: #006cc3;
-                    border-radius: 12px;
-                    font-size: 13px;
-                    font: 600 15px/22px 'Sans Serif';
-                    color:white;
-                }
+        .button3 {
+            background-color:midnightblue;
+            border-color: black;
+            color: white;
+        }
+    </style>
 
-                    .button1 {
-                        background-color: darkred;
-                        border-color:black;
-                        color:white;
-                       
-                    }
-            </style>
-    </head>
-    <body>
-        <form>
-            <table>
-                <caption>
-                    <center>
-                        <font face="calibri" color="gray" size="4">Click a button to send it to the text box.
-                    </center>
-                    <br />
-                </caption>
-                <tr>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  The attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  The attorney has been removed from case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  The party name has been updated on case number XXXX</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  The parties have been dismissed from the case.</button></td>
-                </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Our Accounting Team has approved your credit of $X.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Our Accounting Team was unable to approve your credit due to the following reasons: insert reason here</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Our Accounting team has approved part of your credit request.  See the amount info and reasoning below: insert info below</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Our Accounting Team is still researching your credit request.  We appreciate your patience.  I will reach out to you as soon as they provide an update!</button></td>
+</head>
+<body>
+    <form>
+        <table style="border:outset; border-color:darkgray;">
 
-                </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  </button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                    <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  Your attorney has been added to case number XXXX.</button></td>
-                </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr>
-                    <td>&#8594</td>
-                    <td>&#8594</td>
+            <caption style="font-family:Calibri; font-size:x-large; color:dimgray">Case & Party Management</caption>
 
-                    <td><button type="button" onclick="buttonToDelete(this)" class="button button1">Delete Current Response(s)</button></td>
+            <tr>
+                <td><button type="button" onclick="buttonToText(this)" class="button">The attorney has been to case number XXXX.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">The attorney has been removed from case number XXXX.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">The attorneys have been substituted on case number XXXX.</button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">The party name has been updated on case number XXXX</button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">The parties have been dismissed from case number XXXX.</button></td>
+            </tr>
 
-                    <td>&#8592</td>
-                    <td>&#8592</td>
 
-                </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
+        </table>
 
-            </table>
-            <center> 
-                <textarea rows="20" cols="70" 
-                 style="font-family:Calibri;color:gray;font-size:20"> 
-                    Copy and Paste the incident appropriate responses that pop up here!
-                </textarea>
-            </center>
+        <br />
+        <br />
+        <br />
 
-        </form>
-    </body>
-   
+        <table style="vertical-align:central; text-align:center; border:outset; border-color:darkgray">
+            <caption style="font-family:Calibri; font-size:x-large; color:dimgray">Invoicing/Accounting</caption>
+            <tr>
+                <td><button type="button" onclick="buttonToText(this)" class="button">I have attached the invoices you requested to this email.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Our Accounting Team has approved your credit of $X.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Our Accounting Team was unable to approve your credit due to the following reasons: insert reason here  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Our Accounting team has approved part of your credit request.  See the amount info and reasoning below: insert info below  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Our Accounting Team is still researching your credit request.  We appreciate your patience.  I will reach out to you as soon as they provide an update!  </button></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Please see the attached payment form.  Once completed, please send it to invoicing@fileandserve.com to have your payment processed.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Please see our W9 form attached.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Please see the File & Serve Illinois Monthly Invoicing form attached.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Please see the File & Serve Indiana Monthly Invoicing form attached.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Please see the File & Serve Texas Monthly Invoicing form attached.  </button></td>
+
+            </tr>
+        </table>
+
+        <br />
+        <br />
+        <br />
+
+        <table style="vertical-align:central; text-align:center; border:outset; border-color:darkgray">
+            <caption style="font-family:Calibri; font-size:x-large; color:dimgray">Concierge/EFM</caption>
+            <tr>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Please see the File & Serve Texas Concierge form attached.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Please see the File & Serve Illinois Concierge form attached.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Please see the File & Serve Indiana Concierge form attached.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Be sure to click the 'Technical Issues' box and include your Service Ticket #XXXX in the text field.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Once completed, send the form along with your documents to concierge@fileandservexpress.com to be filed.  </button></td>
+            </tr>
+        </table>
+
+        <br />
+        <br />
+        <br />
+
+        <table style="vertical-align:central; text-align:center; border:outset; border-color:darkgray">
+            <caption style="font-family:Calibri; font-size:x-large; color:dimgray">Standard Ticket Responses (Issue Resolved/Still Investigating)</caption>
+
+            <tr>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Your service ticket #XXXX has been completed.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Your issue has been resolved.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Thank you for the additional information.  I have relayed the details to the technicians working on your ticket.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Our technicians are still investigating your issue.  I apologize for any inconvenience.  Thank you for your patience - I will notify you as soon as there is an update.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Our technicians are still working to complete your request.  I apologize for any inconvenience.  Thank you for your patience - I will notify you as soon as there is an update.  </button></td>
+            </tr>
+        </table>
+
+        <br />
+        <br />
+        <br />
+        <table style="vertical-align:central; text-align:center; border:outset; border-color:darkgray">
+            <caption style="font-family:Calibri; font-size:x-large; color:dimgray">CaseFileXpress</caption>
+            <tr>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Please see the requested CaseFileXpress document attached to this email (trace number XXXX).  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">The documents within the trace numbers listed below can now be opened successfully:  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Your case is now available to file into on CaseFileXpress.  Please clear your cache & cookies before trying again.  </button></td>
+                <td><button type="button" onclick="buttonToText(this)" class="button">Your filing (trace number XXXX) has been re-submitted to the Court's queue and is now awaiting clerk review.  </button></td>
+                <td> <button type="button" onclick="buttonToText(this)" class="button">Your firm's registration code is XXXX.  </button></td>
+            </tr>
+
+            <tr>
+                <td>&#8594</td>
+                <td>&#8594</td>
+
+                <td><button type="button" onclick="buttonToDelete(this)" class="button button1">Delete Current Response(s)</button></td>
+
+                <td>&#8592</td>
+                <td>&#8592</td>
+
+            </tr>
+
+        </table>
+        <br />
+        <br />
+        <center>
+            <textarea rows="10" cols="60"
+                      style="font-family:Calibri;color:black;font-size:x-large; font-weight:100"> 
+            </textarea>
+        </center>
+
+        
+                   <center><button type="button" onclick="Email(this)" class="button3">Email</button></center>
+
+    </form>
+</body>
+
 </html>
