@@ -1,0 +1,296 @@
+﻿
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <br>
+    <title>Email Responses</title>
+
+    <center>
+        <img src="https://secure.fileandservexpress.com/FSXNewUI/Content/CSS/Home/Images/HeaderLogo.png" alt="FSX Icon" style="width:280px; height:53px;" />
+        <br />
+        <font face="calibri" color="#3498DB" size="6">Email Responses</font>
+        <br />
+        <br />
+        <br />
+        <br />
+    </center>
+
+    <script>
+        function myDD() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        function buttonToText(button) {
+            var word = button.innerHTML;
+            var textAreaINeed = document.querySelector("textarea");
+            textAreaINeed.innerHTML += word;
+        }
+
+        function buttonToDelete(button) {
+            var word = button.innerHTML;
+            var textAreaINeed = document.querySelector("textarea")
+            textAreaINeed.innerHTML = '';
+        }
+
+        function Email(button) {
+            var textAreaINeed = document.querySelector("textarea");
+            var bodyOfText = escape(textAreaINeed.innerHTML);
+            var emailWindow = window.open("mailto:demo@demo.com?subject=Ticket Number XXXX&cc=info@fileandserve.com&body=" + bodyOfText)
+
+        }
+        function openStandard() {
+            var x = document.getElementById("myStan");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function openCFX() {
+            var x = document.getElementById("myCFX");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function openConcierge() {
+            var x = document.getElementById("myEFM");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function openInvoicing() {
+            var x = document.getElementById("myBilling");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function openCPM() {
+            var x = document.getElementById("myCPM");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        .dropbtn2 {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: #2980B9;
+            }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3498DB;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd
+                }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="dropdown">
+            <button onclick="myDD()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <button class="dropbtn2" onclick="openStandard(this)">Standard Responses</button>
+                <button class="dropbtn2" onclick="openInvoicing(this)">Invoicing/Accounting</button>
+                <button class="dropbtn2" onclick="openConcierge(this)">Concierge/EFM</button>
+                <button class="dropbtn2" onclick="openCPM(this)">Case & Party Management</button>
+                <button class="dropbtn2" onclick="openCFX(this)">CaseFileXpress</button>
+            </div>
+        </div>
+        </br>
+        </br>
+        </br>
+
+        <div id="myStan" style="display:none">
+            <table>
+                <tr>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Your service ticket #XXXX has been completed.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Your issue has been resolved.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Thank you for the additional information.  I have relayed the details to the technicians working on your ticket.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Our technicians are still investigating your issue.  I apologize for any inconvenience.  Thank you for your patience - I will notify you as soon as there is an update.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Our technicians are still working to complete your request.  I apologize for any inconvenience.  Thank you for your patience - I will notify you as soon as there is an update.  </button></td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <br />
+        </div>
+        <div id="myBilling" style="display:none">
+            <table>
+                <tr>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">I have attached the invoices you requested to this email.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Our Accounting Team has approved your credit of $X.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Our Accounting Team was unable to approve your credit due to the following reasons: insert reason here  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Our Accounting team has approved part of your credit request.  See the amount info and reasoning below: insert info below  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Our Accounting Team is still researching your credit request.  We appreciate your patience.  I will reach out to you as soon as they provide an update!  </button></td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <br />
+        </div>
+        <div id="myCFX" style="display:none">
+            <table>
+                <tr>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Please see the requested CaseFileXpress document attached to this email (trace number XXXX).  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">The documents within the trace numbers listed below can now be opened successfully:  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Your case is now available to file into on CaseFileXpress.  Please clear your cache & cookies before trying again.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Your filing (trace number XXXX) has been re-submitted to the Court's queue and is now awaiting clerk review.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td> <button type="button" onclick="buttonToText(this)" class="dropbtn2">Your firm's registration code is XXXX.  </button></td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <br />
+        </div>
+        <div id="myEFM" style="display:none">
+            <table>
+                <tr>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Please see the attached payment form.  Once completed, please send it to invoicing@fileandserve.com to have your payment processed.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Please see our W9 form attached.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Please see the File & Serve Illinois Monthly Invoicing form attached.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Please see the File & Serve Indiana Monthly Invoicing form attached.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">Please see the File & Serve Texas Monthly Invoicing form attached.  </button></td>
+
+                </tr>
+            </table>
+            <br />
+            <br />
+            <br />
+        </div>
+        <div id="myCPM" style="display:none">
+            <table>
+                <tr>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">The attorney has been to case number XXXX.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">The attorney has been removed from case number XXXX.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">The attorneys have been substituted on case number XXXX.</button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">The party name has been updated on case number XXXX.  </button></td>
+                    <td><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#1a3415"></span></td>
+                    <td><button type="button" onclick="buttonToText(this)" class="dropbtn2">The parties have been dismissed from case number XXXX.</button></td>
+                </tr>
+            </table>
+        </div>
+
+        </br>
+
+    </center>
+    <br />
+    <br />
+    <center>
+        <textarea rows="10" cols="60"style="font-family:Calibri;color:black;font-size:x-large; font-weight:100;">Hello,
+
+</textarea>
+    </center>
+    <br />
+    <br />
+    <center><button type="button" onclick="Email(this)" class="button3">Email</button></center>
+    <br />
+    <br />
+    <table align="center">
+        <tr>
+            <td>&#8594</td>
+            <td>&#8594</td>
+
+            <td><button type="button" onclick="buttonToDelete(this)" class="btn btn-danger">Delete Current Response(s)</button></td>
+
+            <td>&#8592</td>
+            <td>&#8592</td>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>
